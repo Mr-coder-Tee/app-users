@@ -221,7 +221,19 @@
 
 
 
+/* -----media----- */
 
+@media (max-width:900px) {
+  .App-container{
+    flex-direction: column;
+  }
+  .form-container{
+    width: 100%;
+  }
+  .userlist-container{
+    width: 100%;
+  }
+}
 
 
 
