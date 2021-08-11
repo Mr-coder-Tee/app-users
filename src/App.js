@@ -1,30 +1,22 @@
 import './App.css';
 import Nav from './Components/Nav';
-import Form from './Components/Form';
-import UserList from './Components/UserList';
+import HomePage from './Components/HomePage';
+import UserInfo from './Components/UserInfo';
 import React,{useState} from 'react';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 
 
 function App() {
-  const [users,setUser]=useState([]);
-
-  const AddUser=(name,surname,age,DoB,location)=>{
-    setUser([...users,{
-        uid:users.length,
-        _name:name,
-        _surname:surname,
-        _age:age,
-        _DoB:DoB,
-        _location:location
-    }])
-}
+ 
   return (
     <div className="App">
         <Nav/>
-        <div className="App-container">
-            <Form AddUser={AddUser}/>
-            <UserList users={users}/>
-        </div>
+        <Router>
+          <Switch>
+              <Route path="/" exact component={HomePage}/>
+              <Route path="/userinfo" exact component={UserInfo}/>
+          </Switch>
+        </Router>
     </div>
   );
 }

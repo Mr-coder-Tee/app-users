@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
   list-style: none;
+  text-decoration: none;
 
 }
 
@@ -179,7 +180,7 @@
   border: 1px solid rgba(244, 255, 255, .25);
 }
   /* -----Form----- */
-
+ 
 
   /* -----userlist----- */
   .userlist-container{
