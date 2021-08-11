@@ -25,7 +25,4 @@ const UserList = ({users}) => {
      );
 }
  
-// <ul>
-//                 <li>user1 <i class="fa fa-chevron-right" /></li>
-//             </ul>
 export default UserList;
