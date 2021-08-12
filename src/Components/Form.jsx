@@ -21,7 +21,7 @@ const Forms = ({AddUser}) => {
         name:Yup.string().required("enter valid name"),
         surname:Yup.string().required("enter valid surname"),
         age:Yup.number().required("enter valid age"),
-        dob:Yup.string().required("enter Date of Birth"),
+        dob:Yup.string().required("enter gender (Male or Famale)").matches(/^('Male')|(Female)$/,"Please enter a valid gender as Male or Female"),
         location:Yup.string().max(15,"enter valid location").required("Enter Location")
     })
 
@@ -50,7 +50,7 @@ const Forms = ({AddUser}) => {
                             </div>
                             <div className="row">
                                 <TextField label="Age" name="age" type="text"/>
-                                <TextField label="Date of Birth" name="dob" type="text"/>
+                                <TextField label="Gender" name="dob" type="text"/>
                             </div>
                             <div className="row">
                                 <TextArea label="Type Location" name="location" type="text"/>
