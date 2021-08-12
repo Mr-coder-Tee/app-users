@@ -125,10 +125,10 @@
   pointer-events: none;
 
 }
-.form-card form .row .col .inputbox input:focus+.text,
-.form-card form .row .col .textarea input:valid+.text,
-.form-card form .row .col .inputbox textarea:focus+.text,
-.form-card form .row .col .textarea textarea:valid+.text{
+.form-card form .row .col .inputbox input:focus + .text,
+.form-card form .row .col .inputbox input:valid + .text,
+.form-card form .row .col .inputbox textarea:focus + .text,
+.form-card form .row .col .textarea textarea:valid +.text{
   top: -35px;
   left: -10px;
 }
@@ -254,7 +254,15 @@
 
 
 
+/* -----validation----- */
+.error{
+  position: absolute;
+  color: red;
+  font-size: .8rem;
+}
 
+
+/* ---x--validation--x--- */
 
 
 

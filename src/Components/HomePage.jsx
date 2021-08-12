@@ -1,4 +1,4 @@
-import Form from './Form';
+import Forms from './Form';
 import UserList from './UserList';
 import React,{useState} from 'react';
 
@@ -18,7 +18,7 @@ const HomePage = () => {
     return ( 
         <div>
             <div className="App-container">
-                <Form AddUser={AddUser}/>
+                <Forms AddUser={AddUser}/>
                 <UserList users={users}/>
             </div>
         </div>
