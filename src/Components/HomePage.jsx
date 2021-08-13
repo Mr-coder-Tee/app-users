@@ -2,7 +2,7 @@ import Forms from './Form';
 import UserList from './UserList';
 import React,{useState} from 'react';
 
-const HomePage = ({AddUser,users}) => {
+const HomePage = ({AddUser,users,getIndex}) => {
 //     const [users,setUser]=useState([]);
 
 //     const AddUser=(name,surname,age,DoB,location)=>{
@@ -19,7 +19,7 @@ const HomePage = ({AddUser,users}) => {
         <div>
             <div className="App-container">
                 <Forms AddUser={AddUser}/>
-                <UserList users={users}/>
+                <UserList users={users} getIndex={getIndex}/>
             </div>
         </div>
      );

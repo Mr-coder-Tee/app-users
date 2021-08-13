@@ -204,7 +204,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 1px solid rgba(244, 255, 255, .25);
     transition: .5s ease-in;
-
   }
   a i{
     opacity: 0;
@@ -234,6 +233,79 @@
   
  
   /* -----userlist----- */
+
+
+
+
+  /* -----user info----- */
+  .info-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background: #004FF9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFF94C, #004FF9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFF94C, #004FF9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 2px solid rebeccapurple;
+  }
+  
+  .card{
+    position: relative;
+    background: #fff;
+    display: flex;
+    width: 40%;
+    margin: 30px 0;
+    border: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border: 2px solid mediumvioletred;
+
+  }
+.card .imgbx{
+    /* position: absolute; */
+    top: 5px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+    height: calc(100%-20px);
+    width: calc(100%-20px);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, .2);
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, .1);
+    transition: 1s ease-in-out;
+    border: 2px solid red;
+  }
+.card:hover .imgbx{
+    height: 150px;
+    width: 150px;
+    left: -75px;
+    top: calc(50%-75px);
+  }
+.card .imgbx img{
+    max-width: 100px;
+    filter: invert(1);
+    transition: 0.5s ease-in-out;
+    color: black;
+  }
+.card:hover .imgbx img{
+    max-width: 75px;
+  }
+  .content{
+    position: relative;
+    right: 0;
+    width: calc(100%-75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*x -----user info----- x*/
 
 
 

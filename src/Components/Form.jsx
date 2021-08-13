@@ -14,7 +14,6 @@ const Forms = ({AddUser}) => {
 
     const submitUser=(e)=>{
         e.preventDefault();
-        console.log("name",name);
         AddUser(name,surname,age,dob,location);
     }
 
@@ -38,7 +37,6 @@ const Forms = ({AddUser}) => {
                 }}
                 validationSchema={validate}
                 onSubmit={values=>{
-                    console.log("name",values.name);
                     AddUser(values.name,values.surname,values.age,values.dob,values.location);
                 }}
                 
@@ -48,7 +46,6 @@ const Forms = ({AddUser}) => {
                     <div className="form-card">
                         
                         <h2>User Form</h2>
-                        {/* {console.log("formik",formik.values)} */}
                         <Form
                         >
                             

@@ -28,15 +28,14 @@ function App() {
  
   return (
     <div className="App">
-      {console.log("array 0",users[0])}
         <Nav/>
         <Router>
           <Switch>
               <Route path="/" exact>
-                  <HomePage AddUser={AddUser} users={users}/>
+                  <HomePage AddUser={AddUser} users={users} getIndex={getIndex}/>
               </Route>
               <Route path="/userinfo">
-                  <UserInfo index={index}/>
+                  <UserInfo users={users[index]}/>
               </Route>
           </Switch>
         </Router>
