@@ -18,7 +18,9 @@ const UserList = ({users}) => {
                     <IsEmpty/>
                 :
                     <ul>
-                        {users.map(action=><li key={action.uid}><a href="/userinfo">{action.uid+1}{". "}{action._name}<i class="fa fa-chevron-right"></i></a></li>)}
+                        <BrowserRouter>
+                            {users.map(action=><Link className="Link" to="/userinfo">{console.log("Link",Link)} <li key={action.uid}>{action.uid+1}{". "}{action._name}<i class="fa fa-chevron-right"></i></li></Link>)}
+                        </BrowserRouter> 
                     </ul>
                 }
             </div>
@@ -26,7 +28,11 @@ const UserList = ({users}) => {
      );
 }
  
-{/* <BrowserRouter>
-                            {users.map(action=><Link className="Link" to="/userinfo"><li key={action.uid}>{action.uid+1}{". "}{action._name}<i class="fa fa-chevron-right"></i></li></Link>)}
-                        </BrowserRouter> */}
+{/*
+                            {users.map(action=><li key={action.uid}><a href="/userinfo">{action.uid+1}{". "}{action._name}<i class="fa fa-chevron-right"></i></a></li>)}
+
+
+    58:57
+    
+*/}
 export default UserList;

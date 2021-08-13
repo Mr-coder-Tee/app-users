@@ -1,7 +1,7 @@
 import React from 'react';
 
-const UserInfo = () => {
-    return ( <div>info</div> );
+const UserInfo = ({index}) => {
+    return ( <div>{console.log("index",index)}</div> );
 }
  
 export default UserInfo;
