@@ -342,6 +342,7 @@
     transform: translateX(10%);
   }
   .info-container .card .content h1{
+    text-transform: uppercase;
     text-align: center;
     font-size: 3em;
   }
